@@ -1,0 +1,73 @@
+name:   Anthony Cornehl
+email:  accornehl@gmail.com
+phone:  redacted
+github: twinshadow
+weblog: twinshadow.com
+address:
+  - redacted
+  - redacted as well
+
+objective: Programming, System Adminstration, Solving problems with computers
+
+skills:
+  -
+    title: Systems
+    list:
+      - 7 years experience with Linux 2.6 Centos, Debian, Gentoo
+      - 10 years experience with Windows 7, Vista, XP, 2000, 98
+  -
+    title: Programming
+    list:
+      - 5 years experience using Javascript, Python, Perl, POSIX shell scripting
+      - 7 years experience using PHP
+  -
+    title: Software
+    list:
+      - Apache Http, Exim, Munin, MySQL, Nginx, OpenLDAP, Postfix, PostreSQL, Redis, Samba
+      - Git, Mercurial, Subversion, Vim
+
+work:
+  -
+    who:   Isilon Systems
+    when:  Currently employed since 05-2011
+    where: Seattle, Washington, USA
+    title: SDET
+    duties:
+      - Worked with developers to create test planning and test cases for software.
+      - Developed libraries and software for use in automation and test tools.
+      - Setup and administration of physical and virtual machines, including Isilon OneFS, Windows, Linux, and FreeBSD.
+    achievements:
+      -
+
+  -
+    who:   VMC
+    when:  06-2010 to 11-2010
+    where: Redmond, Washington, USA
+    title: Test Associate
+    duties:
+      - Tested software on smart-phones and video-game consoles for design, functional, and Microsoft certification issues.
+      - Acted as a test lead for some projects testing software on video-game consoles; managing testers, proof-checking issue reports, and writing daily reports.
+    achievements:
+      -
+  -
+    who:   Lastwear
+    when:  12-2006 to 06-2011
+    where: Seattle, Washington, USA
+    title: Systems Administrator
+    duties:
+      - Setup of Linux systems to provide Http and E-mail services. Configuration and support of Wordpress installs for company and client websites.
+      - Wrote programs and scripts to automate most processes of system management for databases, websites, and backups.
+    achievements:
+      -
+  -
+    who:   Testing Testing 123
+    when:  01-2006 to 11-2006
+    where: Redmond, Washington, USA
+    title: Test Associate
+    duties:
+      - Testing of software on several Linux 2.6 distributions, writing reports for functional and hardware issues.
+      - Setup and maintained the internal company wiki for documentation of testing procedures, projects, and software.
+      - Acted as a test lead for some projects where I managed other testers, proof-checked issue reports, and wrote daily reports.
+    achievements:
+      -
+
