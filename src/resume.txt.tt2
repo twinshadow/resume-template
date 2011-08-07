@@ -1,0 +1,30 @@
+[% name %]
+
+Phone:   [% phone %]
+E-mail:  [% email %]
+Address: [% address.0 %]
+         [% address.1 %]
+Github:  github.com/[% github %]
+
+
+Skills:
+[% FOREACH skills -%]
+  [% title -%]
+[%- FOR item IN list %]
+  - [% item -%]
+[% END %]
+[% END -%]
+
+Work Experience:
+[%- FOREACH work %]
+  [% when %] -- [% who %]
+  [% title %]
+[%- FOR d IN duties %]
+  - [% d -%]
+[% END -%]
+
+[%- IF achievements; FOR a IN achievments %]
+  - [% a %]
+[% END; END -%]
+
+[% END %]

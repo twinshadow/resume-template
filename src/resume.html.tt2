@@ -1,0 +1,64 @@
+<head>
+</head>
+
+<body>
+  <div style="float:right; margin-right:1em;">
+    <h1 style="font-size:3em;">[% name %]</h1>
+  </div>
+
+  <div>
+    <div id="email">[% email %]</div>
+    <div id="phone">[% phone %]</div>
+
+    <div id="address">
+      [%- FOR line IN address %]
+      [%- line -%]<br>
+      [%- END %]
+    </div>
+  </div>
+
+[% IF github -%]
+  <div>Github: <a href="http://github.com/[% github %]">github.com/[% github %]</a></div>
+[%- END %]
+
+[% IF weblog -%]
+  <div><a href="http://[% weblog %]">http://[% weblog %]</a></div>
+[%- END %]
+
+<div id="objective">[% objective %]</div>
+
+<a href="#technical"><h3>Techincal</h3></a>
+[% FOREACH skills %]
+<span class="bold">[% title %]<span>
+
+<ul>
+[% FOR item IN list %]
+<li>[% item %]</li>
+[% END %]
+</ul>
+
+[% END %]
+
+<a href="#experience"><h3>Work Experience</h3></a>
+
+[% FOREACH work %]
+<div>
+<span class="bold">[% when %]</span> &ndash; <span class="bold">[% who %]</span><br/>
+<span class="title">[% title %]</span>
+
+<ul>
+[% FOR d IN duties %]
+<li>[% d %]</li>
+[% END %]
+</ul>
+
+[% IF achievements %]
+<ul>
+[% FOR a IN achievments %]
+<li>[% a %]</li>
+[% END %]
+</ul>
+[% END %]
+
+[% END %]
+</body>

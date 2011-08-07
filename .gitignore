@@ -1,0 +1,8 @@
+*.aux
+*.dvi
+*.json
+*.log
+*.pdf
+*.ps
+*.tex
+*.xml
