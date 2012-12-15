@@ -7,24 +7,27 @@ address:
   - redacted
   - redacted as well
 
-objective: Programming, System Adminstration, Solving problems with computers
+objective: Network software development
 
 skills:
   -
     title: Systems
     list:
-      - 7 years experience with Linux 2.6 Centos, Debian, Gentoo
-      - 10 years experience with Windows 7, Vista, XP, 2000, 98
+      - 9 years experience with Linux 2.6 Centos, Debian, Gentoo
+      - 11 years experience with Windows 7, Vista, XP, 2000, 98
+      - 2 years packaging software for Arch Linux
+      - 2 years FreeBSD experience
   -
     title: Programming
     list:
-      - 5 years experience using Javascript, Python, Perl, POSIX shell scripting
+      - 8 years experience using Python, Perl, POSIX shell scripting, Javascript
       - 7 years experience using PHP
+      - 2 years experience using C, C++
   -
     title: Software
     list:
-      - Apache Http, Exim, Munin, MySQL, Nginx, OpenLDAP, Postfix, PostreSQL, Redis, Samba
-      - Git, Mercurial, Subversion, Vim
+      - Apache Http, Exim, Munin, MySQL, Nginx, OpenLDAP, Postfix, PostreSQL, Redis, Samba, Vim
+      - Git, Subversion, Mercurial
 
 work:
   -
@@ -37,7 +40,9 @@ work:
       - Developed libraries and software for use in automation and test tools.
       - Setup and administration of physical and virtual machines, including Isilon OneFS, Windows, Linux, and FreeBSD.
     achievements:
-      -
+      - Developed and maintained tools for network testing, focusing on IPv6, IPoIB, and SDP.
+      - Maintained and updated automation around clustered system upgrades.
+      - Development and testing around InfiniBand networking.
 
   -
     who:   VMC
