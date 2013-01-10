@@ -7,26 +7,23 @@ address:
   - redacted
   - redacted as well
 
-objective: Network software development
+objective: Kernel and networking focused software developer
 
 skills:
   -
     title: Systems
     list:
-      - 9 years experience with Linux 2.6 Centos, Debian, Gentoo
-      - 11 years experience with Windows 7, Vista, XP, 2000, 98
-      - 2 years packaging software for Arch Linux
-      - 2 years FreeBSD experience
+      - Several years experience using Linux in desktop and server environments with Centos, Debian, Gentoo, and Arch
+      - Porting packages for Arch Linux, Centos, and FreeBSD
   -
     title: Programming
     list:
-      - 8 years experience using Python, Perl, POSIX shell scripting, Javascript
-      - 7 years experience using PHP
-      - 2 years experience using C, C++
+      - Regularly programming with C, Python, and shell scripting
+      - Familiar with C++, Perl, Javascript, PHP, Ruby
   -
     title: Software
     list:
-      - Apache Http, Exim, Munin, MySQL, Nginx, OpenLDAP, Postfix, PostreSQL, Redis, Samba, Vim
+      - Apache Http, MySQL, PostreSQL, Samba, Vim
       - Git, Subversion, Mercurial
 
 work:
@@ -61,7 +58,7 @@ work:
     title: Systems Administrator
     duties:
       - Setup of Linux systems to provide Http and E-mail services. Configuration and support of Wordpress installs for company and client websites.
-      - Wrote programs and scripts to automate most processes of system management for databases, websites, and backups.
+#      - Wrote programs and scripts to automate most processes of system management for databases, websites, and backups.
     achievements:
       -
   -
@@ -71,8 +68,8 @@ work:
     title: Test Associate
     duties:
       - Testing of software on several Linux 2.6 distributions, writing reports for functional and hardware issues.
-      - Setup and maintained the internal company wiki for documentation of testing procedures, projects, and software.
-      - Acted as a test lead for some projects where I managed other testers, proof-checked issue reports, and wrote daily reports.
+#      - Setup and maintained the internal company wiki for documentation of testing procedures, projects, and software.
+#      - Acted as a test lead for some projects where I managed other testers, proof-checked issue reports, and wrote daily reports.
     achievements:
       -
 
