@@ -90,12 +90,14 @@
 \bigname{[% name %]}
 \begin{flushleft}
 \vspace{-44 pt}
-{ phone: [% phone %] } \\ 
-{ email: [% email %] } \\
-{[% address.0 %]} \\
-{[% address.1 %]} \\
-\vspace{6pt}{ github: github.com/[% github %] } \\
-%{ web: http://[% weblog %] } \\
+{phone: [% phone %]} \\
+{email: [% email %]} \\
+[%- FOREACH adr IN address %]
+{[% adr %]} \\
+[%- END %]
+
+\vspace{6pt}{github: github.com/[% github %]} \\
+%{web: http://[% weblog %]} \\
 \end{flushleft}
 \vspace{8pt}
 
@@ -128,12 +130,22 @@
 [% IF work -%]
 \begin{ressection} {Work Experience}
 
-[%- FOREACH work %]
-\begin{ressubsec} {[% when  %]} {[% title %]} {[% who %]}
-  [%- FOR item IN duties %]
-  \ressubitem {[% item %]}
+[%- FOREACH job IN work %]
+\begin{ressubsec} {[% job.when %]} {[% job.title %]} {[% job.who %]}
+  [%- FOR item IN job.duties %]
+    \ressubitem {[% item %]}
   [%- END %]
 \end{ressubsec}
+  [% IF job.achievements -%]
+  \vspace{-4pt}
+  { Achievements: }
+  \vspace{-4pt}
+  \begin{itemize}
+    [%- FOR item IN job.achievements %]
+    \ressubitem {[% item %]}
+    [%- END %]
+  \end{itemize}
+  [% END -%]
 [% END -%]
 
 \end{ressection}
@@ -141,18 +153,4 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-[% IF oss -%]
-\begin{ressection} {Open Source}
-  \resitem{http://github.twinshadow.com/} 
-
-[%- IF oss.perlctypes %]
-  \begin{reslist} {Perl-Ctypes}
-    \resitem{Writing issue reports relating to usage and usability.}
-  \end{reslist}
-[% END -%]
-
-\end{ressection}
-[% END -%]
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}

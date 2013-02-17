@@ -12,7 +12,7 @@
 
     <div id="address">
       [%- FOR line IN address %]
-      [%- line -%]<br>
+      [%- line %]<br>
       [%- END %]
     </div>
   </div>

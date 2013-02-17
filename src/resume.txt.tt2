@@ -2,8 +2,9 @@
 
 Phone:   [% phone %]
 E-mail:  [% email %]
-Address: [% address.0 %]
-         [% address.1 %]
+Address: [%- FOREACH addr IN address -%]
+         [%- addr %]
+         [%- END %]
 Github:  github.com/[% github %]
 
 
@@ -16,15 +17,15 @@ Skills:
 [% END -%]
 
 Work Experience:
-[%- FOREACH work %]
-  [% when %] -- [% who %]
-  [% title %]
-[%- FOR d IN duties %]
+[%- FOREACH job IN work %]
+  [% job.when %], [% job.who %]
+  [% job.title %]
+[%- FOR d IN job.duties %]
   - [% d -%]
-[% END -%]
-
-[%- IF achievements; FOR a IN achievments %]
-  - [% a %]
+[% END; IF job.achievements %]
+  Achievements:
+[%- FOR item IN job.achievements %]
+  - [% item -%]
 [% END; END -%]
 
 [% END %]

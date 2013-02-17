@@ -4,10 +4,9 @@ phone:  redacted
 github: twinshadow
 weblog: twinshadow.com
 address:
-  - redacted
-  - redacted as well
+  - Seattle, WA
 
-objective: Kernel and networking focused software developer
+objective: Software engineer, networking and distributed systems
 
 skills:
   -
@@ -20,11 +19,6 @@ skills:
     list:
       - Regularly programming with C, Python, and shell scripting
       - Familiar with C++, Perl, Javascript, PHP, Ruby
-  -
-    title: Software
-    list:
-      - Apache Http, MySQL, PostreSQL, Samba, Vim
-      - Git, Subversion, Mercurial
 
 work:
   -
@@ -33,14 +27,13 @@ work:
     where: Seattle, Washington, USA
     title: SDET
     duties:
-      - Worked with developers to create test planning and test cases for software.
+      - Worked with developers to create test plans for software.
       - Developed libraries and software for use in automation and test tools.
       - Setup and administration of physical and virtual machines, including Isilon OneFS, Windows, Linux, and FreeBSD.
     achievements:
       - Developed and maintained tools for network testing, focusing on IPv6, IPoIB, and SDP.
       - Maintained and updated automation around clustered system upgrades.
       - Development and testing around InfiniBand networking.
-
   -
     who:   VMC
     when:  06-2010 to 11-2010
@@ -49,8 +42,6 @@ work:
     duties:
       - Tested software on smart-phones and video-game consoles for design, functional, and Microsoft certification issues.
       - Acted as a test lead for some projects testing software on video-game consoles; managing testers, proof-checking issue reports, and writing daily reports.
-    achievements:
-      -
   -
     who:   Lastwear
     when:  12-2006 to 06-2011
@@ -58,9 +49,7 @@ work:
     title: Systems Administrator
     duties:
       - Setup of Linux systems to provide Http and E-mail services. Configuration and support of Wordpress installs for company and client websites.
-#      - Wrote programs and scripts to automate most processes of system management for databases, websites, and backups.
-    achievements:
-      -
+      - Wrote programs and scripts to automate most processes of system management for databases, websites, and backups.
   -
     who:   Testing Testing 123
     when:  01-2006 to 11-2006
@@ -68,8 +57,6 @@ work:
     title: Test Associate
     duties:
       - Testing of software on several Linux 2.6 distributions, writing reports for functional and hardware issues.
-#      - Setup and maintained the internal company wiki for documentation of testing procedures, projects, and software.
-#      - Acted as a test lead for some projects where I managed other testers, proof-checked issue reports, and wrote daily reports.
-    achievements:
-      -
+      - Setup and maintained the internal company wiki for documentation of testing procedures, projects, and software.
+      # - Acted as a test lead for some projects where I managed other testers, proof-checked issue reports, and wrote daily reports.
 
