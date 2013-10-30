@@ -1,0 +1,24 @@
+{{ name }}
+
+Phone:   {{ phone }}
+E-mail:  {{ email }}
+Address: {% for addr in address %}
+{{ addr }}
+{% endfor %}
+Github:  github.com/{{ github }}
+
+
+Skills:
+{% for skill in skills %}
+  {{ skill.title }}
+{% for item in skill.list %}
+  - {{ item }}
+{% endfor %}{% endfor %}
+
+Work Experience:
+{% for job in work %}
+  {{ job.when }}, {{ job.who }}
+  {{ job.title }}
+{% for d in job.duties %}
+  - {{ d }}
+{% endfor %}{% endfor %}

@@ -8,53 +8,54 @@ address:
 
 objective: Software engineer, networking and systems
 
-bullet-points:
-  Systems:
-      - Several years experience using Linux in desktop and server environments with Centos, Ubuntu, Gentoo, and Arch
-      - Package porting and systems for Arch Linux, Centos, and FreeBSD
-  Programming:
-      - Regularly codes with C, Python, and shell scripting
-      - Familiar with C++, Perl, PHP
+skills:
+  - title: Systems
+    list:
+      - Several years experience using Linux in desktop and server environments with Centos, Ubuntu, Gentoo, and Arch Linux
+      - Active package porter for the Arch Linux user repository (InfiniBand OFED and OpenStack)
+  - title: Programming
+    list:
+      - Daily development with C (GNU and BSD libc), Python 2, and shell scripts
+      - Familiar with C++, Perl, PHP, Javascript
 
 work:
-  - who:   EMC: Isilon Storage Division
+  - who:   EMC Isilon Storage Division
     when:  Currently employed since 06-2013
     where: Seattle, Washington, USA
-    title: SDE
+    title: SDE, Engineering Automation
     duties:
-      - Build processes and platforms for engineering to build test-tools
-  - who:   EMC: Isilon Storage Division
+      - Built processes and platforms for engineering to build test-tools.
+      - Developed automation using virtualized environments for infrastructure and product testing.
+      - Created and maintained automation around clustered system upgrades.
+      - Developed end-to-end automated system for generating and analyzing coverage profiles for builds run through regression tests
+  - who:   EMC Isilon Storage Division
     when:  05-2011 to 06-2013
     where: Seattle, Washington, USA
-    title: SDET
+    title: SDET, Networking
     duties:
-      - Worked with developers to create test plans for software.
-      - Developed libraries and software for use in automation and test tools.
+      - Worked with developers to create test plans and tools for software features.
+      - Developed libraries and software for product and test, targeting Ethernet IPv4/IPv6 and Infiniband IPoIB/SDP protocols.
       - Setup and administration of physical and virtual machines, including Isilon OneFS, Windows, Linux, and FreeBSD.
-    achievements:
-      - Developed and maintained tools for network testing, focusing on IPv6, IPoIB, and SDP.
-      - Maintained and updated automation around clustered system upgrades.
-      - Development and testing around InfiniBand networking.
   - who:   VMC
     when:  06-2010 to 11-2010
     where: Redmond, Washington, USA
     title: Test Associate
     duties:
       - Tested software on smart-phones and video-game consoles for design, functional, and Microsoft certification issues.
-      - Acted as a test lead for some projects testing software on video-game consoles; managing testers, proof-checking issue reports, and writing daily reports.
+      #- Acted as a test lead for some projects testing software on video-game consoles; managing testers, proof-checking issue reports, and writing daily reports.
   - who:   Lastwear
     when:  12-2006 to 06-2011
     where: Seattle, Washington, USA
     title: Systems Administrator
     duties:
       - Setup of Linux systems to provide Http and E-mail services. Configuration and support of Wordpress installs for company and client websites.
-      - Wrote programs and scripts to automate most processes of system management for databases, websites, and backups.
+      #- Wrote programs and scripts to automate most processes of system management for databases, websites, and backups.
   - who:   Testing Testing 123
     when:  01-2006 to 11-2006
     where: Redmond, Washington, USA
     title: Test Associate
     duties:
       - Testing of software on several Linux 2.6 distributions, writing reports for functional and hardware issues.
-      - Setup and maintained the internal company wiki for documentation of testing procedures, projects, and software.
-      # - Acted as a test lead for some projects where I managed other testers, proof-checked issue reports, and wrote daily reports.
+      #- Setup and maintained the internal company wiki for documentation of testing procedures, projects, and software.
+      #- Acted as a test lead for some projects where I managed other testers, proof-checked issue reports, and wrote daily reports.
 ...
