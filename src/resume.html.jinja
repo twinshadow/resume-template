@@ -1,0 +1,52 @@
+<head>
+</head>
+
+<body>
+  <div style="float:right; margin-right:1em;">
+    <h1 style="font-size:3em;">{{ name }}</h1>
+  </div>
+
+  <div>
+    <div id="email">{{ email }}</div>
+    <div id="phone">{{ phone }}</div>
+
+    <div id="address">
+      {% for line in address %}
+      {{ line }}<br>
+      {% endfor %}
+    </div>
+  </div>
+
+{% if github %}
+  <div>Github: <a href="http://github.com/{{ github }}">github.com/{{ github }}</a></div>
+{% endif %}
+
+{% if weblog %}
+  <div><a href="http://[{ weblog }]">http://{{ weblog }}</a></div>
+{% endif %}
+
+<div id="objective">{{ objective }}</div>
+
+<a href="#technical"><h3>Techincal</h3></a>
+{% for skill in skills %}
+  <span class="bold">{{ skill.title }}</span>
+  <ul>
+{% for item in skill.list %}
+    <li>{{ item }}</li>
+{% endfor %}
+  </ul>
+{% endfor %}
+
+<a href="#experience"><h3>Work Experience</h3></a>
+
+{% for job in work %}
+  <div>
+  <span class="bold">{{ job.when }}</span> &ndash; <span class="bold">{{ job.who }}</span><br/>
+  <span class="title">{{ job.title }}</span>
+  <ul>
+{% for d in job.duties %}
+  <li>{{ d }}</li>
+{% endfor %}
+  </ul>
+{% endfor %}
+</body>
