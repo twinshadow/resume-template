@@ -1,36 +1,48 @@
-RESUME_DATA=resume.yaml
+# Sources and objects
+RESUME_DATA=	resume.yaml
+OBJS_TEX=	resume.aux resume.dvi resume.ps resume.rtf resume.tex resume.log
+OBJS=		resume.pdf resume.txt resume.html
+
+
+# Program defaults
+DVIPS?=		dvips
+LATEX2RTF?=	latex2rtf
+LATEX?=		latex
+MKDIR?=		mkdir
+PDFLATEX?=	pdflatex
+PYTHON?=	python
+RM?=		rm -f
 
 # Templates
-%.tex: src/%.tex.tt2
-	@echo "Rendering the TeX file..."
-	@tt-render --data="${RESUME_DATA}" "$^" > "$@"
+%.tex: %.tex.jinja
+	${PYTHON} ${CURDIR}/render_jinja.py "${RESUME_DATA}" "$<" > "${@}"
 
-%.txt: src/%.txt.tt2
-	@echo "Rendering the Text file..."
-	@tt-render --data="${RESUME_DATA}" "$^" | fold -s -w80 | sed '/  -/,/^$$/s/^\(\S\)/    \1/g; s/\s*$$//' > "$@"
+%.txt: %.txt.jinja
+	${PYTHON} ${CURDIR}/render_jinja.py "${RESUME_DATA}" "$<" > "${@}"
 
-%.html: src/%.html.tt2
-	@echo "Rendering the HTML file..."
-	@tt-render --data="${RESUME_DATA}" "$^" > "$@"
+#	@tt-render --data="${RESUME_DATA}" "$^" | fold -s -w80 | sed '/  -/,/^$$/s/^\(\S\)/    \1/g; s/\s*$$//' > "$@"
+
+%.html: %.html.jinja
+	${PYTHON} ${CURDIR}/render_jinja.py "${RESUME_DATA}" "$<" > "${@}"
+
 
 # Latex Renderers
 %.pdf: %.tex
-	@echo "Generating the PDF file..."
-	pdflatex "$^"
+	${PDFLATEX} "$<"
 
 %.rtf: %.tex
-	@echo "Generating the RTF file..."
-	latex2rtf "$^"
+	${LATEX2RTF} "$<"
 
 %.dvi: %.tex
-	@echo "Generating the DVI file..."
-	latex "$^"
+	${LATEX} "$<"
 
 %.ps: %.dvi
-	@echo "Generating the PS file..."
-	dvips "$^"
+	${DVIPS} "$<"
 
-all: resume.pdf resume.html resume.txt
+# Targets
+all: ${OBJS}
 
 clean:
-	rm -fv *.aux *.dvi *.html *.log *.pdf *.ps *.rtf *.tex *.txt
+	${RM} ${OBJS} ${OBJS_TEX}
+
+.PHONY: clean
