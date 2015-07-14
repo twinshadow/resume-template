@@ -1,13 +1,17 @@
 ## Resume, be Template
 
-When I am not too busy, say, in-between jobs with no prospects, I like to keep my programming sharp by doing stupid projects.
+When I am not too busy, say, in-between jobs, I like to keep my programming sharp by automating things.
 
 This is one of them.
 
 #### How does this work?
 
-Files in the `src/` directory contain the templates, with are processed by Template-Toolkit, a Perl templating module. The actual resume *content* lives in the `resume.yaml` file.
+The resume data lives in `resume.yaml` which is then processed by the python script `render_jinja.py` using the [Jinja2](http://jinja.pocoo.org/) templates.
 
-The make-ish shell script, `make.sh` contains functions for generating the templates and processing the resulting files into other formats. Another perl module, Template-Toolkit-Simple, provides the bin script `tt-render` that uses YAML-XS and processes the templates with that data.
+To build all the templates, simply type `make all` or the files of choice; resume.pdf, resume.html, or resume.txt
 
-Elementary.
+Prerequisites:
+
+- Jinja2 `pip install jinja`
+- Latex (for the tex/ps/pdf files)
+
