@@ -1,61 +1,81 @@
 ---
 name:   Anthony Cornehl
-email:  accornehl@gmail.com
+email:  accornehl@fastmail.fm
 phone:  redacted
 github: twinshadow
 address:
   - Seattle, WA
 
-objective: Software engineer, networking and systems
+objective: Software developer, networking and systems
 
 skills:
   - title: Systems
     list:
-      - Several years experience using Linux in desktop and server environments with Centos, Ubuntu, Gentoo, and Arch Linux
-      - Active package porter for the Arch Linux user repository (InfiniBand OFED and OpenStack)
+      - Experience using Linux in desktop and server environments with Centos, Ubuntu, Gentoo, and Arch Linux
+      - Ported packages for the Arch Linux user repository (InfiniBand OFED and OpenStack)
+      - FreeBSD development experience in base system and ports as part of job and outside of work.
+
   - title: Programming
     list:
-      - Daily development with C (GNU and BSD libc), Python 2, and shell scripts
+      - Regularly develop with C (gcc, clang on Linux and FreeBSD), Python 2, and unix shell scripting.
       - Familiar with C++, Perl, PHP, Javascript
 
 work:
   - who:   EMC Isilon Storage Division
-    when:  Currently employed since 06-2013
+    when:  Currently employed since 06-2014
     where: Seattle, Washington, USA
-    title: SDE, Engineering Automation
+    title: SDE, OS team
+    duties:
+      - Merged Isilon changes from FreeBSD 7 to FreeBSD 10 including network drivers, network stack, IPMI stack, GEOM, and the Isilon mirrored disk driver.
+      - Developed PXE infrastructure for booting and reimaging systems when full driver support was not prsent during the FreeBSD merge project.
+      - Ported code for InfiniBand and OpenSM running on FreeBSD 10 OFED InfininBand stack.
+      - Converted Coverity automation to run on OneFS and cross-compile build machines.
+
+  - who:   EMC Isilon Storage Division
+    when:  06-2013 to 06-2014
+    where: Seattle, Washington, USA
+    title: SDE, Engineering Infrastructure
     duties:
       - Built processes and platforms for engineering to build test-tools.
-      - Developed automation using virtualized environments for infrastructure and product testing.
-      - Created and maintained automation around clustered system upgrades.
+      - Created tools in virtualized environments for infrastructure and product testing.
+      - Improved automation around clustered system upgrades.
       - Developed end-to-end automated system for generating and analyzing coverage profiles for builds run through regression tests
+
   - who:   EMC Isilon Storage Division
     when:  05-2011 to 06-2013
     where: Seattle, Washington, USA
     title: SDET, Networking
     duties:
-      - Worked with developers to create test plans and tools for software features.
-      - Developed libraries and software for product and test, targeting Ethernet IPv4/IPv6 and Infiniband IPoIB/SDP protocols.
+      - Worked with developers to create test plans and tools for validating software features.
+      - Developed libraries and software for product and test, targeting Ethernet IPv4/IPv6 and Infiniband IPoIB/SDP upper-level protocols.
       - Setup and administration of physical and virtual machines, including Isilon OneFS, Windows, Linux, and FreeBSD.
-  - who:   VMC
-    when:  06-2010 to 11-2010
-    where: Redmond, Washington, USA
-    title: Test Associate
-    duties:
-      - Tested software on smart-phones and video-game consoles for design, functional, and Microsoft certification issues.
-      #- Acted as a test lead for some projects testing software on video-game consoles; managing testers, proof-checking issue reports, and writing daily reports.
-  - who:   Lastwear
-    when:  12-2006 to 06-2011
-    where: Seattle, Washington, USA
-    title: Systems Administrator
-    duties:
-      - Setup of Linux systems to provide Http and E-mail services. Configuration and support of Wordpress installs for company and client websites.
-      #- Wrote programs and scripts to automate most processes of system management for databases, websites, and backups.
-  - who:   Testing Testing 123
-    when:  01-2006 to 11-2006
-    where: Redmond, Washington, USA
-    title: Test Associate
-    duties:
-      - Testing of software on several Linux 2.6 distributions, writing reports for functional and hardware issues.
-      #- Setup and maintained the internal company wiki for documentation of testing procedures, projects, and software.
-      #- Acted as a test lead for some projects where I managed other testers, proof-checked issue reports, and wrote daily reports.
+
+#  - who:   VMC
+#    when:  06-2010 to 11-2010
+#    where: Redmond, Washington, USA
+#    title: Test Associate
+#    duties:
+#      - Tested software on smart-phones and video-game consoles for design, functional, and Microsoft certification issues.
+#      #- Acted as a test lead for some projects testing software on video-game consoles; managing testers, proof-checking issue reports, and writing daily reports.
+
+#  - who:   Lastwear
+#    when:  12-2006 to 06-2011
+#    where: Seattle, Washington, USA
+#    title: Systems Administrator
+#    duties:
+#      - Setup of Linux systems to provide Http and E-mail services. Configuration and support of Wordpress installs for company and client websites.
+#      #- Wrote programs and scripts to automate most processes of system management for databases, websites, and backups.
+
+#  - who:   Testing Testing 123
+#    when:  01-2006 to 11-2006
+#    where: Redmond, Washington, USA
+#    title: Test Associate
+#    duties:
+#      - Testing of software on several Linux 2.6 distributions, writing reports for functional and hardware issues.
+#      #- Setup and maintained the internal company wiki for documentation of testing procedures, projects, and software.
+#      #- Acted as a test lead for some projects where I managed other testers, proof-checked issue reports, and wrote daily reports.
+
+#references:
+#  - 'https://aur.archlinux.org/packages/?O=0&SeB=s&K=twinshadow&outdated=&SB=n&SO=a&PP=50&do_Search=Go'
+#  - 'https://bugs.freebsd.org/bugzilla/buglist.cgi?email1=accornehl&emailassigned_to1=1&emailreporter1=1&emailtype1=substring&query_format=advanced'
 ...

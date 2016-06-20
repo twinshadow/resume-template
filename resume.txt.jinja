@@ -22,3 +22,10 @@ Work Experience:
 {% for d in job.duties %}
   - {{ d }}
 {% endfor %}{% endfor %}
+
+{% if references %}
+References:
+{% for line in references %}
+- {{ line }}
+{% endfor %}
+{% endif %}

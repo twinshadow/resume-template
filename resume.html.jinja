@@ -49,4 +49,13 @@
 {% endfor %}
   </ul>
 {% endfor %}
+
+{% if references %}
+<a href="#references"><h3>References</h3></a>
+<ul>
+{% for line in references %}
+<li>{{ line }}</li>
+{% endfor %}
+</ul>
+{% endif %}
 </body>

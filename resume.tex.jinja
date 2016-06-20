@@ -5,6 +5,9 @@
 \usepackage{geometry}
 \usepackage[T1]{fontenc}
 \usepackage{tgpagella}
+\usepackage{hyperref}
+
+\hypersetup{colorlinks=true,urlcolor=blue}
 
 \pagestyle{empty}
 \geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in,headheight=0in,headsep=0in,footskip=.3in}
@@ -91,25 +94,25 @@
 \begin{flushleft}
 \vspace{-44 pt}
 {phone: [[ phone ]]} \\
-{email: [[ email ]]} \\
+{email: \href{mailto:[[ email ]]}{[[ email ]]}} \\
 [[% for adr in address %]]
 {[[ adr ]]} \\
 [[% endfor %]]
 
-\vspace{4pt}{github: github.com/[[ github ]]} \\
+\vspace{4pt}{github: \href{https://github.com/[[ github ]]}{github.com/[[ github ]]}} \\
 %{web: http://[[ weblog ]]} \\
 \end{flushleft}
 \vspace{8pt}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 [[% if objective %]]
+
 \begin{ressection}{Objective}
   \resitem{[[ objective ]]}
 \end{ressection}
-[[% endif %]]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+[[% endif %]]
 
 \begin{ressection} {Technical Skills}
 
@@ -138,5 +141,15 @@
 \end{ressection}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+[[% if references %]]
+
+\begin{ressection}{References}
+[[% for line in references %]]
+  \resitem {\fontsize{6pt}{6pt}\url{[[ line ]]}}
+[[% endfor %]]
+\end{ressection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+[[% endif %]]
 
 \end{document}
