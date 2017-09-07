@@ -30,12 +30,15 @@ RM?=		rm -f
 %.pdf: %.tex
 	${PDFLATEX} "$<"
 
+# Rich-text from TeX
 %.rtf: %.tex
 	${LATEX2RTF} "$<"
 
+# DVI from TeX
 %.dvi: %.tex
 	${LATEX} "$<"
 
+# Post-script from DVI
 %.ps: %.dvi
 	${DVIPS} "$<"
 
